@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+    {% block content %}
+
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">Datos de producto</h1>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Categoria: {{ producto.categoria }}</h2>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Nombre: {{ producto.nombre }}</h2>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Precio: {{ producto.precio }} soles</h2>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Stock: {{ producto.stock }}</h2>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Fecha de publicacion: {{ producto.pub_date }}</h1>
+    {% endblock %}
