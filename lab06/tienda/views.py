@@ -16,7 +16,7 @@ class indexView(APIView):
         context = {'product_list': serProductos, 'categorias': serCategorias}
         # return Response(data=context,status=status.HTTP_200_OK, template_name='index.html')
         return render(request, 'index.html', context)
-        # return Response(context)    
+    
 class productoView(APIView):
     def get(self, request, producto_id):
         producto = get_object_or_404(Producto, pk=producto_id)
